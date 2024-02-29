@@ -11,42 +11,56 @@ html, body, div {
     text-align: center;
 
     /* Phase 1 */
-    /* Your code here 
+    display: grid;
+    grid-template-columns: 3fr auto 1fr;
+    grid-template-areas: 
+    'header header header'
+    'main . sidebar'
+    'footer footer footer';
+
+   
+
+
+
+
+
 
     /* Bonus Phase */
-    /* Your code here 
+    padding-left: 100px;
+    row-gap: 15px;
+    
 }
 .item-1 {
     background-color: #87a7b3; /* steel blue */
-
+    grid-area: header
     /* Phase 1 */
-    /* Your code here 
+     
 }
 .item-2 {
     background-color: #e1f1dd; /* light sea green */
-
+    grid-area: main;
     /* Phase 1 */
-    /* Your code here 
+    
 }
 .item-3 {
     background-color: #cdc7be; /* grey */
-
+    grid-area: sidebar;
     /* Phase 1 */
-    /* Your code here 
+   
 }
 .item-4 {
     background-color: #766161; /* brown */
     color: antiquewhite;
-
+    grid-area: footer;
     /* Phase 1 */
-    /* Your code here 
+    
 }
 
 .divider {
     background-image: linear-gradient(to right, #e1f1dd, #cdc7be);
 
     /* Bonus Phase */
-    /* Your code here 
+    
 }
 
 /* ====== */
@@ -55,6 +69,12 @@ html, body, div {
     border: solid #87a7b3 2px;
     margin: 20px;
 
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
     /* Phase 2 */
-    /* Your code here 
+    
 }
